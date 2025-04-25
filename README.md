@@ -2,12 +2,14 @@
 
 Nuxt layer for providing components for integrating the Drupal CMS with Lupus Decoupled.
 
-https://www.drupal.org/project/cms
-https://lupus-decoupled.org
+* https://www.drupal.org/project/cms
+* https://lupus-decoupled.org
 
 ## Usage
 
-Todo. See https://www.drupal.org/project/lupus_decoupled/issues/3506988
+Todo. 
+
+See https://www.drupal.org/project/lupus_decoupled/issues/3506988
 
 
 ## Development
