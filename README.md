@@ -8,16 +8,20 @@ Nuxt layer for providing components for integrating the Drupal CMS with Lupus De
 The layer consist of multiple sub-layers for the respective drupal-cms recipes,
 e.g. 
  * layers/blog - For [Lupus Decoupled Blog](https://www.drupal.org/project/lupus_decoupled_blog)
-* layers/news - For [Lupus Decoupled News](https://www.drupal.org/project/lupus_decoupled_news)
+ * layers/news - For [Lupus Decoupled News](https://www.drupal.org/project/lupus_decoupled_news)
 
 All layers are automatically added when the main CMS layer is added.
 
 ## Usage
 
-Todo. 
+Simple add the following to your nuxt config file:
 
-See https://www.drupal.org/project/lupus_decoupled/issues/3506988
+```
+  extends: ['github:drunomics/nuxt-drupal-cms-layer'],
+```
 
+It will automatically add all the sub-layers and register the components within,
+so they are ready to use.
 
 ## Development
 
