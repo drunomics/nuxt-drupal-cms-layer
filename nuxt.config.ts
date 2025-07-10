@@ -3,5 +3,9 @@ export default defineNuxtConfig({
   extends: [
     './layers/blog',
     './layers/news',
+    './layers/events'
+  ],
+  modules: [
+    '@nuxtjs/tailwindcss'
   ]
 })

@@ -1,5 +1,5 @@
 {
-  "name": "drupal-cms-layouer",
+  "name": "drupal-cms-layer",
   "type": "module",
   "version": "0.0.1",
   "main": "./nuxt.config.ts",
@@ -12,13 +12,15 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "nuxtjs-drupal-ce": "^2.2.6",
     "@nuxt/eslint": "latest",
     "eslint": "^9.25.1",
     "nuxt": "^3.17.2",
+    "nuxtjs-drupal-ce": "^2.2.6",
     "typescript": "^5.8.3",
     "vue": "latest"
   },
   "dependencies": {
+    "@nuxtjs/leaflet": "^1.2.6",
+    "@nuxtjs/tailwindcss": "^6.14.0"
   }
 }
