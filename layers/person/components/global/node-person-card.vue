@@ -11,6 +11,9 @@
         <h2 v-if="title" class="text-lg font-semibold text-gray-900 dark:text-gray-100">
           {{ title }}
         </h2>
+        <p v-if="personRoleJobTitle" class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+          {{ personRoleJobTitle }}
+        </p>
       </div>
     </article>
   </nuxt-link>
@@ -22,5 +25,6 @@ defineProps<{
   title?: String;
   path?: object;
   featuredImage?: CustomElementContent;
+  personRoleJobTitle?: string;
 }>()
 </script>

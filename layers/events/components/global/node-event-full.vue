@@ -2,27 +2,27 @@
   <div class="max-w-4xl mx-auto px-4 py-8">
     <div class="mb-8">
       <component :is="useDrupalCe().renderCustomElements(featuredImage)" class="w-full h-auto rounded-lg shadow-lg mb-6" />
-      <h1 v-if="title" class="text-4xl font-bold text-gray-900 mb-4">{{ title }}</h1>
+      <h1 v-if="title" class="text-4xl font-bold mb-4">{{ title }}</h1>
     </div>
     <div class="bg-white rounded-lg shadow-md p-6 mb-8">
       <div v-if="date" class="mb-4">
-        <h3 class="text-lg font-semibold text-gray-700 mb-2">Date:</h3>
-        <p class="text-gray-600">{{ formatDate(date.value) }} - {{ formatDate(date.endValue) }}</p>
+        <h3 class="text-lg font-semibold mb-2">Date:</h3>
+        <p>{{ formatDate(date.value) }} - {{ formatDate(date.endValue) }}</p>
       </div>
       <div v-if="locationName" class="mb-4">
-        <h3 class="text-lg font-semibold text-gray-700 mb-2">Venue:</h3>
-        <p class="text-gray-600">{{ locationName }}</p>
+        <h3 class="text-lg font-semibold mb-2">Venue:</h3>
+        <p>{{ locationName }}</p>
       </div>
       <div v-if="locationAddress" class="mb-4">
-        <p class="text-gray-600">{{ locationAddress.addressLine1 }}</p>
-        <p class="text-gray-600">{{ locationAddress.locality }},
+        <p>{{ locationAddress.addressLine1 }}</p>
+        <p>{{ locationAddress.locality }},
           {{ locationAddress.administrativeArea }} {{ locationAddress.postalCode }}</p>
       </div>
       <div v-if="link" class="mb-4">
         <a :href="link.uri" target="_blank">{{ link.title }}</a>
       </div>
     </div>
-    <div class="prose max-w-none mb-8" v-html="content"></div>
+    <div class="prose max-w-none mb-8 dark:prose-invert" v-html="content"></div>
     <div v-if="geofield" class="rounded-lg overflow-hidden shadow-lg">
       <div class="h-[400px]">
         <LMap
