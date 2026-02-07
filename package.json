@@ -14,7 +14,7 @@
   "devDependencies": {
     "nuxtjs-drupal-ce": "^2.2.6",
     "@nuxt/eslint": "latest",
-    "eslint": "^9.25.1",
+    "eslint": "^10.0.0",
     "nuxt": "^3.17.2",
     "typescript": "^5.8.3",
     "vue": "latest"
